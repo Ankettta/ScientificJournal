@@ -1,0 +1,114 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet"  href="style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<title>JOURNAL</title>
+</head>
+<body>
+<div class="header">
+	<h1 class="name">SCIENTIFIC JOURNAL	™</h1>
+	<!-- Выпадающее меню: начало!-->
+	<div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn"></button>
+		<div id="myDropdown" class="dropdown-content">
+			<a href="#">Video</a>
+			<a href="#">Education</a>
+			<a href="#">Health</a>
+			<a href="#">Earth</a>
+			<a href="#">Podcasts</a>
+			<a href="#">Blog</a>
+			<a href="#">Tech</a>
+			<a href="#">Store</a>
+		</div>
+	</div>
+	<!-- Выпадающее меню: конец!-->
+	<div class="navbar"><a class="navtext">Video</a><a class="navtext">Education</a><a class="navtext">Health</a><a class="navtext">Earth</a><a class="navtext">Podcasts</a><a class="navtext">Blog</a><a class="navtext">Tech</a><a class="navtext">Store</a></div>
+</div>
+<!-- Основной контейнер: начало!-->
+<div class="main">
+<!-- Боковой раздел: начало!-->
+	<div class="col-3 col-s-3 ">
+		<div class="news">
+			<img class="envi"src="media/envi3.jpg"></img>
+			<a class="lildesc">Everyone should try to reduce their carbon footprint. </a>
+			<a class="verylil"><br>Read more ...<br><br>May 12, 2021  — Norway</a>
+		</div>	
+		<div class="news">
+			<img class="envi"src="media/envi2.jpg"></img>
+			<a class="lildesc">Poisonous chemical emissions occurred in Japan.<br> What do we need to know? </a>
+			<a class="verylil"><br>Read more ...<br><br>May 13, 2021 — Japan</a>
+		</div>	
+		<div class="news">
+			<img class="envi"src="media/envi3.jpg"></img>
+			<a class="lildesc">Drought on Russian fields, <br>what to expect this summer?</a>
+			<a class="verylil"><br>Read more ...<br><br>May 5, 2021 — Russia</a>
+		</div>	
+	</div>
+	<!-- Боковой раздел: конец!-->
+	<!-- Основной раздел: начало!-->
+	<div class="col-6 col-s-9  ">
+	    <div class="timeline">
+			<video width="400" controls autoplay="autoplay" muted="muted">
+				<source src="media/earth.mp4" type="video/mp4" loop="loop" >
+				Your browser does not support HTML5 video.
+			</video>
+			<a class="bigdesc">NASA `s Messenger<br> The rover is delivered to Mars.</a>
+			<a class="desc2"><br><br>The Mars 2020 mission with the Perseverance rover launched from Earth in July last year, and the rover successfully landed on Mars in February. The fifth rover in NASA history is equipped with seven scientific instruments to study the structure and geology of the Red Planet.
+			The main task will be to collect samples of Martian soil, which are expected to be delivered to Earth in the future. On board Perseverance - an experimental device for obtaining oxygen from the atmosphere of Mars, as well as a "space helicopter", which is to fly for the first time on another planet.</a>
+			<a class="verylil"><br><br><br><br>May 1, 2021 — Anna Mccinly</a>
+		</div>
+	</div>
+	<!-- Основной раздел: конец!-->
+	<!-- Правый раздел: начало!-->
+	<div class="col-3 col-s-12">
+		<div class="rnews">
+			<a class="rtitle">Tech<br><br></a>
+			<a class="lildesc">A new technology has been created to protect your data<br>what to expect?</a>
+			<a class="verylil"><br>READ MORE...<br><br>30 seconds ago, Anna Mccinly</a>
+		</div>
+		<div class="rnews">
+			<a class="rtitle">Earth<br><br></a>
+			<a class="lildesc">A new technology has been created to protect your data<br>what to expect?</a>
+			<a class="verylil"><br>READE MORE ...<br><br>30 seconds ago, Anna Mccinly</a>
+		</div>
+		<div class="rnews">
+			<a class="rtitle">Podcasts<br><br></a>
+			<a class="lildesc">Check out our new podcasts on smart consumption</a>
+			<a class="verylil"><br>READ MORE ...<br><br>30 seconds ago, Anna Mccinly</a>
+		</div>
+		<div class="rnews">
+			<a class="rtitle">Earth<br><br></a>
+			<a class="lildesc">A new technology has been created to protect your data<br>what to expect?</a>
+			<a class="verylil"><br>READE MORE ...<br><br>30 seconds ago, Anna Mccinly</a>
+		</div>
+	</div>
+	<!-- Правый раздел: конец!-->
+</div>
+<!-- Основной контейнер: конец!-->
+<div class="footer">
+	<p class="ft">Scientific Journal 2021 ©</p>
+</div>
+<script>
+/* При нажатии на кнопку происходит изменение CSS-свойств выпадающего меню*/
+function myFunction() {
+ document.getElementById("myDropdown").classList.toggle("show");
+}
+// Скрытие меню при нажатии клавишей мыши не в области меню
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+	var dropdowns = document.getElementsByClassName("dropdown-content");
+	var i;
+		for (i = 0; i < dropdowns.length; i++) {
+			var openDropdown = dropdowns[i];
+			if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			}
+		}
+	}
+} 
+
+</script>
+</body>
+</html>
