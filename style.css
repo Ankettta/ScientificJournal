@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Playfair Display', serif;
+}
+video {
+  width: 100%;
+  height: auto;
+  margin-bottom:15px;
+}
+.main:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.name{
+	color: #383838;
+	margin:0;
+	margin-bottom:15px;
+	margin-top:20px;
+}
+.rtitle{
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	text-transform: uppercase;
+}
+.rnews{
+	margin-bottom:20px;
+	box-shadow: -1px 4px 8px 0px rgba(34, 60, 80, 0.2);
+	padding:10px;
+}
+.rnews:hover{
+  background-color: #e0e0e0; 
+  -webkit-text-shadow: 2px 2px 2px #000;
+  -moz-text-shadow: 2px 2px 2px #000;
+  cursor: pointer;
+  transition:  0.5s;
+}
+.ft{
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	color:white;
+}
+.header {
+	text-align:center;
+	background-color: white;
+	color: #ffffff;
+	padding-top:10px;
+}
+.navbar{
+	border-bottom:1px solid #adacac;
+	border-top:1px solid #adacac;
+	padding:20px;
+	display:flex;
+	justify-content:space-around;
+}
+.navtext{
+  color: #383838;
+  font-weight:700;  
+  font-size:1em;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+/* Свойства текста меню при hover и focus */
+.navtext:hover, .navtext:focus {
+  color: #a0a0d4; /* Меняем цвет текста */
+  -webkit-text-shadow: 2px 2px 2px #000;
+  -moz-text-shadow: 2px 2px 2px #000;
+      text-shadow: 2px 2px 2px #000;
+  cursor: pointer;
+  transition:  0.5s;
+ }
+body{
+	background-color:white;
+	margin:0;
+}
+.news{box-shadow: -1px 4px 8px 0px rgba(34, 60, 80, 0.2); padding:10px; margin-bottom:10px;}
+.news:hover{
+  background-color: #e0e0e0; /* Меняем цвет фона */
+  -webkit-text-shadow: 2px 2px 2px #000;
+  -moz-text-shadow: 2px 2px 2px #000;
+  cursor: pointer;
+  transition:  0.5s;
+}
+.envi{
+	width:100%;
+	margin-bottom:20px;
+}
+.lildesc{
+	font-size:1em;
+	font-weight:600;
+	font-family: 'Open Sans', sans-serif;
+}
+.verylil{
+	font-size:0.75em;
+	opacity:.4;
+	font-family: 'Open Sans', sans-serif;
+}
+.timeline{
+	text-align:center;
+	padding:10px;
+}
+.bigdesc{
+	font-size:2.5em;
+	font-weight:700;
+}
+.desc2{
+	border-bottom: 1px solid #dbd9d9;
+}
+.footer {
+  text-align:center;
+  padding:10px;
+  margin-top:15px;
+  background-color: #e5e3e3;
+
+}  
+  [class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+/* Кнопка выпадающего меню */
+.dropbtn {
+ background-color:white;
+ padding: 15px;
+ border:1px solid white;
+ cursor: pointer;
+ background-image:url('media/menuicon.svg');
+  transition:  transform 0.5s;
+}
+/* Свойства кнопки при hover и focus */
+.dropbtn:hover, .dropbtn:focus {
+ background-color: #e8e6e8;
+ transform: rotate(180deg);
+}
+/* Основной контейнер */
+.dropdown {
+ position: relative;
+ display:none;
+ float: right ;
+ margin-right:18px;
+}
+/* Содержание меню, скрыто по-умолчанию */
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: white;
+ min-width: 160px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 1;
+ right: 0 ; 
+ transition: transform 2s;
+}
+/* Ссылки внутри меню */
+.dropdown-content a {
+ color: black;
+ font-weight:700;
+ padding: 10px 15px;
+ text-decoration: none;
+ display: block;
+ border-bottom:1px solid #c2c0c0;
+}
+/* Подсветка элементов меню при\ hover */
+.dropdown-content a:hover {background-color: #ddd}
+/* Этот класс используется JS-скриптом, и изменяет dropdown-content при
+нажатии на кнопку*/
+.show {display:block;}
+
+/* от 600 пикселей и выше) */
+@media only screen and (min-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+  [class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .navbar{display:none;}
+  .dropdown {
+ position: relative;
+  display:inline-block;}
+}
+/* от 768 пикселей и выше) */
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+}
+
+
